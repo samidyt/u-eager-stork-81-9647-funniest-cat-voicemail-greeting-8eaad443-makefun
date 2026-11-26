@@ -14,3 +14,4 @@ if ([...GREETING].length > 120 || GREETING.trim().length === 0) {
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", GREETING, "utf8");
+console.log(`Wrote /output/entry.txt (${[...GREETING].length} characters, no trailing newline).`);
